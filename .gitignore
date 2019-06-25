@@ -2,6 +2,7 @@
 node_modules
 /dist
 /src_copy
+src/components/apiKeys.js
 
 # local env files
 .env.local

@@ -42,7 +42,13 @@ export default {
       issApiUrl: 'https://api.wheretheiss.at/v1/satellites/25544'
     }
   },
-  computed: {},
+  mounted() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.defer = true;
+    script.src = 'https://maps.googleapis.com/maps/api/js?';
+    document.querySelector('head').appendChild(script);
+  },
   watch: {
     autoRefreshPosition: function() {
       if (this.autoRefreshPosition === true) {
