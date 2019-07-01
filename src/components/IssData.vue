@@ -22,7 +22,7 @@
 <script>
 import IssMap from './IssMap';
 import IssPosition from './IssPosition';
-import GOOGLE_MAP_API_KEY from './ApiKeys';
+// import GOOGLE_MAP_API_KEY from './ApiKeys';
 export default {
   name: 'IssData', 
   components: {
@@ -47,7 +47,7 @@ export default {
     const script = document.createElement('script');
     script.async = true;
     script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API_KEY}`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.VUE_APP_GOOGLE_MAP_API_KEY}`;
     document.querySelector('head').appendChild(script);
   },
   watch: {

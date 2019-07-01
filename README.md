@@ -1,4 +1,5 @@
 # where-is-iss-now
+It is a simple project allowing user to track position of International Space Station on Google map. 
 
 ## Project setup
 ```
@@ -15,20 +16,12 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Run your unit tests
 ```
 npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Environmental variables
+`.env` file keep default values of environmental variables (for now Google Api keys), and is commited to Git repositiory. 
+You should create your own `.env.local` file and enter your own keys. This file will be not commited to Git, so your app will work as designed but your keys will be safe. 
+
