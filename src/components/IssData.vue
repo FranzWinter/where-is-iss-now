@@ -22,7 +22,6 @@
 <script>
 import IssMap from './IssMap';
 import IssPosition from './IssPosition';
-// import GOOGLE_MAP_API_KEY from './ApiKeys';
 export default {
   name: 'IssData', 
   components: {
@@ -40,14 +39,14 @@ export default {
       isMapCreated: false,
       autoRefreshPosition: false, 
       autoRefreshInterval: 10000,
-      issApiUrl: 'https://api.wheretheiss.at/v1/satellites/25544'
+      issApiUrl: process.env.VUE_APP_ISS_API_URL
     }
   },
   mounted() {
     const script = document.createElement('script');
     script.async = true;
     script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.VUE_APP_GOOGLE_MAP_API_KEY}`;
+    script.src = `${process.env.VUE_APP_GOOGLE_MAP_SCRIPT_SRC}${process.env.VUE_APP_GOOGLE_MAP_API_KEY}`;
     document.querySelector('head').appendChild(script);
   },
   watch: {
