@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 md4>
+  <v-flex xs12 md4 class="iss_data_container">
     <v-layout align-space-around justify-space-between column>
       <v-flex d-flex xs12>
         <v-card color="teal lighten-4">

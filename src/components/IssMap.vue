@@ -1,5 +1,5 @@
 <template>
-  <v-flex d-flex xs12 md8>
+  <v-flex d-flex xs12 md8 class="map_container">
     <v-responsive :aspect-ratio='1/1' >
       <div id='map'>
       </div>

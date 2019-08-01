@@ -8,5 +8,6 @@ Vue.use(Vuetify)
 describe('IssPosition', () => {
     it('renders position info', () => {
         const wrapper = mount(IssPosition)
+        expect(wrapper.html().includes('iss_data_container')).toBe(true)
     })
 })
